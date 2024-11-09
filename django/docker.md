@@ -100,3 +100,9 @@ Please see the makefile for other destinations such as:
   * jup-push
   * ... etc.
 
+------------------------------------------------------------------------------------
+
+# FAQ
+
+To run it on arm64 arch machines first install following:
+docker run --privileged --rm tonistiigi/binfmt --install all
