@@ -104,7 +104,6 @@ Please see the makefile for other destinations such as:
 To run it on arm64 arch machines first install following:
 docker run --privileged --rm tonistiigi/binfmt --install all
 
-
 ------------------------------------------------------------------------------------
 # GOOD REFERENCES
 
