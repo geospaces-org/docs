@@ -31,7 +31,7 @@ You can check docker images:
 ```
 
 ------------------------------------------------------------------------------------
-## Build the image for base application
+## Build the image for the application
 
 In this section, we will see how to build base coker image and push it to docker hub.
 If you create your own, you can build and push your image ad you customize it.
@@ -56,10 +56,26 @@ run:
 
 You may run the image on default port and start the app as follows:
 ```
-
+ [ ] make django-runit
 ```
 
-Docker 
+### Some tweaks you need to do manually
+```
+  [ ] make django-runitbash
+   @dock [~/git/DS/apps ] => RUN python manage.py createsuperuser --username=pod --email=''
+   OUT>> use password; I would use 'pod'
+
+  # you may have to set some thing manualluy
+```
+
+And then push the image to docker hub.
+
+Once you do this manually, you may commit the image to the hub by
+```
+ [ ] make django-commit
+```
+
+
 
 ------------------------------------------------------------------------------------
 ## Build Jupyter notebook image (optional - extra credit)
