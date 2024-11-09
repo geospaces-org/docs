@@ -75,8 +75,6 @@ Once you do this manually, you may commit the image to the hub by
  [ ] make django-commit
 ```
 
-
-
 ------------------------------------------------------------------------------------
 ## Build Jupyter notebook image (optional - extra credit)
 This section shows how to extend the base image for specific use case.
@@ -101,8 +99,13 @@ Please see the makefile for other destinations such as:
   * ... etc.
 
 ------------------------------------------------------------------------------------
-
 # FAQ
 
 To run it on arm64 arch machines first install following:
 docker run --privileged --rm tonistiigi/binfmt --install all
+
+
+------------------------------------------------------------------------------------
+# GOOD REFERENCES
+
+1. https://spacelift.io/blog/docker-entrypoint-vs-cmd
